@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_active">
+
+    <fragment
+        android:id="@+id/navigation_saved"
+        android:name="net.thebookofcode.www.statuscloud.ui.saved.SavedFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_navigation_saved_to_SavedImagePagerFragment"
+            app:destination="@id/savedImagePagerFragment" />
+        <action
+            android:id="@+id/action_navigation_saved_to_savedVideoViewFragment"
+            app:destination="@id/savedVideoViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_active"
+        android:name="net.thebookofcode.www.statuscloud.ui.active.ActiveFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_active" >
+        <action
+            android:id="@+id/action_navigation_active_to_imagePagerFragment"
+            app:destination="@id/imagePagerFragment" />
+        <action
+            android:id="@+id/action_navigation_active_to_activeVideoViewFragment"
+            app:destination="@id/activeVideoViewFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_upload"
+        android:name="net.thebookofcode.www.statuscloud.ui.upload.UploadFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_upload" >
+    </fragment>
+    <fragment
+        android:id="@+id/imagePagerFragment"
+        android:name="net.thebookofcode.www.statuscloud.ui.images.ActiveImagePagerFragment"
+        android:label="fragment_image_pager"
+        tools:layout="@layout/fragment_image_pager" />
+    <fragment
+        android:id="@+id/savedImagePagerFragment"
+        android:name="net.thebookofcode.www.statuscloud.ui.images.SavedImagePagerFragment"
+        android:label="fragment_saved_image_pager"
+        tools:layout="@layout/fragment_saved_image_pager" />
+    <fragment
+        android:id="@+id/activeVideoViewFragment"
+        android:name="net.thebookofcode.www.statuscloud.ui.videos.ActiveVideoViewFragment"
+        android:label="fragment_active_video_view"
+        tools:layout="@layout/fragment_active_video_view" />
+    <fragment
+        android:id="@+id/savedVideoViewFragment"
+        android:name="net.thebookofcode.www.statuscloud.ui.videos.SavedVideoViewFragment"
+        android:label="fragment_saved_video_view"
+        tools:layout="@layout/fragment_saved_video_view" >
+        <action
+            android:id="@+id/action_savedVideoViewFragment_to_navigation_saved"
+            app:destination="@id/navigation_saved" />
+    </fragment>
+
+</navigation>

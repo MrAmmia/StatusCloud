@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940769717179",
+    "project_id": "statuscloud-f7ef9",
+    "storage_bucket": "statuscloud-f7ef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940769717179:android:fa1e8ff298f238497a729e",
+        "android_client_info": {
+          "package_name": "net.thebookofcode.www.statuscloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940769717179-9v70sn7p0s3scgvpig5h8lvmr0o9s8ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg7hntJd_8gD1quKt7tFPvjDXal9DAZdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940769717179-9v70sn7p0s3scgvpig5h8lvmr0o9s8ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

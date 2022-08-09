@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.images.ActiveImagePagerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager2"/>
+        <!--ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" /-->
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:fab_addButtonColorNormal="#303099"
+            app:fab_addButtonColorPressed="@color/purple_200"
+            app:fab_addButtonPlusIconColor="@color/white"
+            app:fab_labelStyle="@style/customFab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/actionSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:fab_title="Save"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_save" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/actionSaveRename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/white"
+                app:fab_title="Save and Rename"
+                app:fab_icon="@drawable/ic_save_rename" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/actionShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:fab_title="Share"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_share" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
